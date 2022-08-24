@@ -1,0 +1,45 @@
+<!--Write HTML input tags snippet to show default values for all Form elements.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form elements</title>
+</head>
+<body>
+    <form action="" oninput="x.value=formElements.value">
+        <fieldset>
+            <legend>Form Elements</legend>
+            <label for="label">I am label:</label> <br>
+            <label for="input">input element:</label><br>
+            <input type="text"><br>
+            <label for="select">Select element:</label><br>
+            <select name="formElements" id="formElements">
+                <option value="input">input</option>
+                <option value="label">label</option>
+                <option value="select" selected>select</option>
+                <option value="textArea">textarea</option>
+            </select><br>
+            <label for="textArea">textarea element:</label><br>
+            <textarea name="textArea" cols="30" rows="4"></textarea><br>
+            <label for="datalist">datalist element:</label><br>
+            <input list="selectors">
+            <datalist id="selectors">
+                <option value="universal selectors"></option>
+                <option value="class selectors"></option>
+                <option value="id selectors"></option>
+            </datalist><br>
+            <label for="output">output element:</label><br>
+            <output name="x" for="formElements"></output><br>
+            <label for="submit">submit element</label><br>
+            <input type="submit" >
+        </fieldset>
+        
+
+
+
+    </form>
+</body>
+</html>
